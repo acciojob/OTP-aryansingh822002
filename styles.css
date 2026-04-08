@@ -1,7 +1,7 @@
 /*  your css code here. If applicable */
 body {
-    background-color: #fbfbfb;
-    font-family: 'Muli', sans-serif;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,41 +10,58 @@ body {
 }
 
 .container {
-    background-color: #fff;
-    border: 3px solid #000;
+    border: 2px solid #000;
     border-radius: 10px;
-    padding: 30px;
-    max-width: 1000px;
+    padding: 40px;
+    max-width: 900px;
     text-align: center;
+}
+
+#verification_heading {
+    margin-bottom: 10px;
+}
+
+#verification_subtext {
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 30px;
 }
 
 .code-container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin: 40px 0;
+    gap: 15px;
+    margin-bottom: 40px;
 }
 
 .code {
+    border: 1px solid #e0e0e0;
     border-radius: 5px;
-    font-size: 75px;
-    height: 120px;
-    width: 100px;
-    border: 1px solid #eee;
-    margin: 1%;
+    font-size: 80px;
+    height: 150px;
+    width: 120px;
     text-align: center;
     font-weight: 300;
-    -moz-appearance: textfield; /* Remove arrows for Firefox */
+    color: #757575;
 }
 
-/* Remove arrows/spinners for Chrome, Safari, Edge */
+/* Removes arrows from number input */
 .code::-webkit-outer-spin-button,
 .code::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-.code:valid {
-    border-color: #3498db;
-    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+.code:focus {
+    outline: none;
+    border: 2px solid #000;
+}
+
+.info-box {
+    background-color: #ebebeb;
+    padding: 15px;
+    border-radius: 5px;
+    color: #888;
+    font-size: 14px;
+    display: inline-block;
 }
